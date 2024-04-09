@@ -10,13 +10,24 @@ const router = createRouter({
     {
       path: "/Display",
       name: "Display",
-      component: () => import("../mainPages/DisplayUser.vue"),
+      component: () => import("../mainPages/Display.vue"),
     },
     {
-      path: "/edit",
-      name: "edit",
-      component: () => import("../mainPages/EditUser.vue"),
+      path: "/AddUser",
+      name: "Add",
+      component: () => import("../mainPages/AddUser.vue"),
     },
+    {
+      path: "/video",
+      name: "video",
+      component: () => import("../mainPages/Video.vue"),
+    },
+    {
+      path: "/update",
+      name: "update",
+      component: () => import("../mainPages/Updater.vue"),
+    },
+
 
   ],
 });
